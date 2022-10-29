@@ -1,8 +1,6 @@
 // Algoritmo de Carregamento 
 
-start()
-
-function start() {
+module.exports = function start(message) {
   console.log("Starting ")
 
   let loading = ''
@@ -10,19 +8,19 @@ function start() {
 
   const myTimeout = setInterval(() => {
     for (var i = 0; i < 1; i++) {
-      count > loading.length ? console.log(loading += '.') : zeroTime(myTimeout)
+      count > loading.length ? console.log(loading += '.') : zeroTime(myTimeout, message)
     }
 
   }, 800)
 
 }
 
-function zeroTime(timeout) {
+function zeroTime(timeout, message) {
   clearTimeout(timeout)
 
   setTimeout(() => {
-    console.log('\nHello World!')
-  }, 1000)
+    console.log(`\n${message}`)
+  }, 50)
 
 }
 
