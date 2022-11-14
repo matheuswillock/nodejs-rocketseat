@@ -10,7 +10,16 @@
  * --name e --greeting para que seja impresso no terminal
  * a saudação e o nome da pessoa.
  * --name "Matheus Willock" --greeting "tudo bem com você?"
+ * 
+ * run:
+ * ```
+ *  node desafio.js --name "Matheus Willock" --greeting "tudo bem com você?"
+ * ```
+ * 
  */
+// console.log(process)
+// console.log(process.argv)
+
 
 const getFlag = require('./getFlag')
 
